@@ -1,0 +1,78 @@
+@import "../../global.scss";
+
+.hotelCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 330px;
+  height: 370px;
+  // border: 10px solid white;
+  text-align: center;
+  margin: 0px 0px 10px 10px;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+}
+
+.hotelCardImg {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 10px 10px;
+  border: 7px solid white;
+    box-sizing: border-box;
+}
+
+.ratingAndCheckboxContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  
+
+  .favCardRating {
+    background-color: #003580;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+}
+
+
+
+.hotelCardDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+
+  .hotelCardDetails {
+    padding: 10px;
+    background-color: #F5F5F5;
+    border-radius: 50px;
+    margin: 0;
+  }
+
+  .hotelCardName {
+    margin-top:4px;
+    // font-size: 20px;
+  }
+
+  .btn {
+    position: absolute;
+    width: 150px;
+    border: none;
+    height: 35px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    background-color: $buttonColor;
+    cursor: pointer;
+    bottom: 5px;
+    
+  }
+}

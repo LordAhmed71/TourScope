@@ -1,0 +1,84 @@
+@import "../../global.scss";
+
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.featuredWrapper {
+    width: 32.6%;
+    border-radius: 15px;
+    transition: transform .5s;
+    transition: all 0.5s ease;
+
+    &:first-child:hover {
+        box-shadow: -6px -6px 5px 0px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: -6px -6px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: -6px -6px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &:nth-child(2):hover {
+        box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &:nth-child(3):hover {
+        box-shadow: 6px -6px 5px 0px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 6px -6px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 6px -6px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &:nth-child(4):hover {
+        box-shadow: -6px 6px 5px 0px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: -6px 6px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: -6px 6px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &:nth-child(5):hover {
+        box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &:nth-child(6):hover {
+        box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+}
+
+.featuredItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 240px;
+    flex: 1;
+    padding: 6px;
+    border-radius: 15px;
+    background-color: $frameColor;
+}
+
+.featuredImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.featuredTitles {
+    position: absolute;
+}

@@ -1,0 +1,181 @@
+.datatable {
+  height: 600px;
+  padding: 20px;
+
+
+  .datatableTitle {
+    width: 100%;
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link {
+      text-decoration: none;
+      color: green;
+      font-size: 16px;
+      font-weight: 400;
+      border: 1px solid green;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.moderator {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: green;
+    }
+
+    &.confirmed {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: green;
+    }
+
+    &.pending {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: goldenrod;
+    }
+
+    &.cancelled {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: crimson;
+    }
+
+    &.supervisor {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: crimson;
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .modifiybtn {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      border: 1px dotted rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+    }
+
+    .deletebtn {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px dotted rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+    }
+  }
+
+  .datagrid {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+
+
+
+
+
+
+
+
+.popup-content5-newusers {
+  width: 1024px;
+  height: 470px;
+  background-color: #fff;
+  border-radius: 10px;
+  animation: fade-in 1s ease forwards;
+  padding: 30px;
+  box-sizing: border-box;
+
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.newusersDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  .newusersCol {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+
+    input[type=text] {
+      width: 100%;
+      height: 3em;
+      margin-bottom: 1em;
+      border-radius: 25px;
+      border: 1px solid #efefef;
+      background-color: #f5f5f5;
+      padding-left: 10px;
+    }
+
+    *:focus {
+      outline: none;
+    }
+
+    label {
+      margin-bottom: 0.5em;
+      font-size: 1.05rem;
+      color: #142662;
+      font-weight: 500;
+    }
+  }
+}
+
+.newusersHeading {
+  color: #142662;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.newusersBottom {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.role {
+  width: 100%;
+  height: 3em;
+  margin-bottom: 1em;
+  border-radius: 25px;
+  border: 1px solid #efefef;
+  background-color: #f5f5f5;
+}
